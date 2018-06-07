@@ -350,8 +350,8 @@ class DayColumn extends React.Component {
 
     selector.on('select', bounds => {
       if (this.state.selecting) {
-        this._selectSlot({ ...this.state, action: 'select', bounds })
         this.setState({ selecting: false })
+        this._selectSlot({ ...this.state, action: 'select', bounds })
       }
     })
   }
